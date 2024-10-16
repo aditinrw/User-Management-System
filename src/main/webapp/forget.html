@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="forgot.js" defer></script> 
+</head>
+<body>
+    <form action="ForgotServlet" method="post" onsubmit="return validatePassword()">
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="newPassword">Enter your new password:</label>  <!-- ID corrected here -->
+            <input type="password" id="newPassword" name="newPassword" placeholder="Enter your new Password" required>
+        </p>
+        <p>
+            <input type="submit" id="submit" value="Reset Password">
+        </p>
+        <p id="error" style="color:red"></p> 
+    </form>
+</body>
+</html>

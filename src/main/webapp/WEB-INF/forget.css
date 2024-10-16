@@ -1,0 +1,89 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
+    width: 350px;
+    transition: all 0.3s ease;
+}
+
+
+form:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); 
+}
+
+
+form p {
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white; 
+    font-size: 14px;
+}
+
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #8e2de2; 
+    border-radius: 12px; 
+    background-color: #f8f8f8; 
+    color: #333333; 
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+
+input:focus {
+    border-color: #4a00e0; 
+    box-shadow: 0 0 8px rgba(74, 0, 224, 0.4); 
+}
+
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+    border:2px solid white;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #3e00c3, #6b00b1); 
+  
+}
+
+

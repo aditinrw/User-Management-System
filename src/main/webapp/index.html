@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <h1>Registration Form</h1>
+            <form action="RegistrationFormServlet" method="post" onsubmit="return validatePassword()">
+                <p>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                </p>
+                <p>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </p>
+                <p id="error" style="color:red"></p>
+                <p>
+                    <label for="mob-no">Mobile Number:</label>
+                    <input type="tel" id="mob-no" name="mob-no" pattern="[0-9]{10}" placeholder="Enter your mobile number (10 digits)" required>
+                </p>
+                <p>
+                    <label for="dob">Date of Birth (dd/mm/yyyy):</label>
+                    <input type="text" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/YYYY" required>
+                </p>
+                <p>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="semester">Current Semester:</label>
+                    <input type="number" id="semester" name="semester" min="1" max="8" placeholder="Enter your current semester" required>
+                </p>
+                <p>
+                    <label for="class10-percentage">Class 10 Percentage:</label>
+                    <input type="number" id="class10-percentage" name="class10-percentage" step="1" min="0" max="100" placeholder="Enter class 10 percentage" required>
+                </p>
+                <p>
+                    <label for="class12-percentage">Class 12 Percentage:</label>
+                    <input type="number" id="class12-percentage" name="class12-percentage" step="1" min="0" max="100" placeholder="Enter class 12 percentage" required>
+                </p>
+                <p>
+                    <label for="graduation-percentage">Graduation Percentage:</label>
+                    <input type="number" id="graduation-percentage" name="graduation-percentage" step="1" min="0" max="100" placeholder="Enter your graduation percentage" required>
+                </p>
+                <p>
+                    <label for="specialization">Specialization:</label>
+                    <input type="text" id="specialization" name="specialization" placeholder="Enter your area of specialization" required>
+                </p>
+                <p >
+                <label for="experience-status">Are you fresher or experienced:</label><br>
+                    <label>
+                        <input type="radio" id="fresher" name="experience-status" value="fresher" required>
+                        Fresher
+                    </label>
+                    <label>
+                        <input type="radio" id="experienced" name="experience-status" value="experienced" required>
+                        Experienced
+                    </label>
+                </p>
+
+				<p>
+                    <input type="submit" id="submit" value="Register">
+                </p>
+                
+                <p id="bottom">Already have an account? <a href="login.jsp">  login</a></p>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

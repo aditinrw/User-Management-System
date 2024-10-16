@@ -1,0 +1,122 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: linear-gradient(135deg, #6c63ff, #ff6bcb); /* Colorful gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 80px; 
+}
+
+.outer-box {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    border-radius: 24px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    width: 400px; 
+    transition: all 0.3s ease;
+}
+
+.outer-box:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); 
+}
+
+.inner-box {
+    padding: 10px;
+    border-radius: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333; 
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#forget-pass a{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-decoration: none;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555555; 
+    font-size: 18px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 14px;
+    border: 2px solid #6c63ff; 
+    border-radius: 12px; 
+    background-color: #f9f9f9; 
+    color: #333333;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff6bcb; 
+    background-color: #f0eaff; 
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.4); 
+}
+
+#submit {
+    background: linear-gradient(135deg, #6c63ff, #ff6bcb);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.1s; 
+    margin-top: 20px; 
+    display: block; 
+    width: 100%; 
+}
+
+#submit:hover {
+    background: linear-gradient(135deg, #574bdf, #d85d9f);
+    transform: scale(1.05); 
+}
+
+p:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+.outer-box:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); 
+}
+
+#bottom{
+	display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 10px;
+	color:#555555; 
+	margin-top: 20px;
+}
+
+#bottom a{
+	text-decoration:none;
+	color:#555555; 
+}
