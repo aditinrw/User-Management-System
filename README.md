@@ -20,7 +20,7 @@ A web application built using **Java Servlets** and **JSP** that provides user *
 - **Back-end:**  
   - Java Servlets  
   - JSP  
-- **Server:** Apache Tomcat (or any other Servlet container)
+- **Server:** Apache Tomcat   
 
 ---
 
