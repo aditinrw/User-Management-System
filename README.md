@@ -27,4 +27,4 @@ A web application built using **Java Servlets** and **JSP** that provides user *
 ## **Setup and Installation**
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/User-Management-System.git
+   git clone https://github.com/aditii-techie/User-Management-System.git
