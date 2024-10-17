@@ -18,7 +18,7 @@
             </div>
         </form>
         <button id="first" value="Register" ><a href="index.html">Register</a></button>
-        <button id="second" value="Login"><a href="login.html">Login</a></button>
+        <button id="second" value="Login"><a href="login.jsp">Login</a></button>
     </header>
     <div class="main-content">
         <h2>Personal Details</h2>

@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet{
 				int class10 = rs.getInt("class10Percentage");
 				int class12 = rs.getInt("class12Percentage");
 				int graduation = rs.getInt("graduationPercentage");
-				String specaial = rs.getString("specialization");
+				String special = rs.getString("specialization");
 				String status = rs.getString("experienceStatus"); //value fresher/experienced
 				
 			    session.setAttribute("firstName", firstName);
@@ -60,7 +60,7 @@ public class LoginServlet extends HttpServlet{
 			    session.setAttribute("class10", class10);
 			    session.setAttribute("class12", class12);
 			    session.setAttribute("graduation", graduation);
-			    session.setAttribute("specaial", specaial);
+			    session.setAttribute("special", special);
 			    session.setAttribute("status", status);
 				
 			    RequestDispatcher rd = req.getRequestDispatcher("/profile.jsp");
